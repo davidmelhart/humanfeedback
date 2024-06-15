@@ -1,0 +1,203 @@
+#title {
+    display: inline-flex;
+    align-items: center;
+    border: 4px solid;
+    padding: 5px 20px;
+    background: linear-gradient(52deg, rgba(255, 255, 255, 0.15) 3%, rgba(255, 255, 255, 0.25) 97%);
+    border-radius: 0.2em;
+    max-width: 100%;
+    overflow: hidden;
+}
+
+#human {
+	font-family: "Nanum Pen Script", cursive;
+	font-weight: 400;
+	font-style: normal;
+	font-size: 1.6em;
+	line-height: 0;
+}
+
+#ai {
+	text-transform: lowercase;
+}
+
+body {
+	background: #242424;	
+}
+
+h1, h2, h3, h4, h5, h6, label, .button {
+	font-family: "DM Mono", monospace;
+	font-weight: 900;
+	font-style: normal;
+	text-transform: uppercase;
+}
+
+.spotlights > section > .image:before {
+	background: #0069B6;
+}
+
+#sidebar {
+	background: #242424;
+}
+
+#sidebar nav a {
+	font-family: "DM Mono", monospace;
+	font-weight: 900;
+	font-style: normal;
+	font-size: 0.8em;
+}
+
+#intro,
+#footer {
+	background-image: url(images/intro.svg), linear-gradient(52deg, #0069B6 3%, #3CC5FE 97%);
+}
+
+#sidebar nav a:before {
+	background: #0069B6;
+}
+
+#sidebar nav a:after {
+	background-image: linear-gradient(to right, #099CFF, #9AD7FF);
+}
+
+.wrapper.style1 {
+	background-color: #1f1f1f;
+}
+
+.wrapper.style2 {
+	background-color: #242424;
+}
+
+.wrapper.style3 {
+	background-color: #2e2e2e;
+}
+
+.wrapper.alt {
+	background-color: #242424;
+}
+
+
+.wrapper.style1-alt {
+	background-color: #242424;
+}
+
+.wrapper.style2-alt {
+	background-color: #242424;
+}
+
+
+.wrapper.style3-alt {
+	background-color: #242424;
+}
+
+.wrapper.style1 .icon.major:before,
+.wrapper.style1-alt .icon.major:before,
+.wrapper.style2 .icon.major:before,
+.wrapper.style2-alt .icon.major:before,
+.wrapper.style3 .icon.major:before,
+.wrapper.style3-alt .icon.major:before {
+	color: #099CFF;
+}
+
+input[type="submit"],
+input[type="reset"],
+input[type="button"],
+button,
+.button {
+	border: solid 2px !important;
+	border-radius: 0.5em;
+}
+
+input[type="submit"]:after,
+input[type="reset"]:after,
+input[type="button"]:after,
+button:after,
+.button:after {
+	border-radius: 0.5em;
+}
+
+#intro .inner {
+	display: flex;
+}
+
+#intro-content {
+	width: 100%;
+}
+
+#intro-content p {
+	font-size: 1.2em;
+}
+
+#preview {
+  perspective: 50vw;
+  perspective-origin: 50% 50%;
+  width: 50vw;
+}
+
+#preview img {
+  width: 50vw;
+  transform: rotateX(10deg) rotateY(-10deg) rotateZ(3deg) translate(0, -50%);
+  position: absolute;
+  border: 3px solid;
+  border-radius: 0.5em;
+  top: 50%;
+  box-shadow: 12px 12px 10px -10px rgba(0, 0, 0, 0.25);
+  opacity: 0;
+  animation-timing-function: ease-out;
+	animation-fill-mode: forwards;
+	animation-duration: 1s;
+}
+
+#intro {
+	overflow: hidden;
+}
+
+@keyframes example-appear-one {
+  from {transform: translate3d(120px, -100px, 10px) rotateX(10deg) rotateY(-10deg) rotateZ(3deg) translate(33vw, -50%); opacity: 0}
+  to {transform: translate3d(120px, -100px, 10px) rotateX(10deg) rotateY(-10deg) rotateZ(3deg) translate(0, -50%); opacity: 1}
+}
+
+@keyframes example-appear-two {
+  from {transform: translate3d(60px, -30px, 10px) rotateX(10deg) rotateY(-10deg) rotateZ(3deg) translate(33vw, -50%); opacity: 0}
+  to {transform: translate3d(60px, -30px, 10px) rotateX(10deg) rotateY(-10deg) rotateZ(3deg) translate(0, -50%); opacity: 1}
+}
+
+@keyframes example-appear-three {
+  from {transform: translate3d(0px, 40px, 10px) rotateX(10deg) rotateY(-10deg) rotateZ(3deg) translate(33vw, -50%); opacity: 0}
+  to {transform: translate3d(0px, 40px, 10px) rotateX(10deg) rotateY(-10deg) rotateZ(3deg) translate(0, -50%); opacity: 1}
+}
+
+#preview img:nth-of-type(1) {
+	animation-name: example-appear-one;
+  animation-delay: 0s;
+}
+
+#preview img:nth-of-type(2) {
+	animation-name: example-appear-two;
+	animation-delay: 0.75s;
+}
+
+#preview img:nth-of-type(3) {
+	animation-name: example-appear-three;
+	animation-delay: 1.5s;
+}
+
+@media screen and (max-width: 736px) {
+	#preview {
+		display: none;
+	}
+	#intro-content {
+    text-align: center;
+	}
+
+	ul.actions {
+		justify-content: center;
+	}
+}
+
+@media screen and (max-width: 480px) {
+	#title {
+		font-size: 20px;
+    margin: 0 auto 0.5em auto;
+	}
+}
