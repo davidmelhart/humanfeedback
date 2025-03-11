@@ -149,22 +149,29 @@
 				}
 			})
 			.each(function() {
+		        var $section = $(this);
 
-				var	$this = $(this),
-					$image = $this.find('.image'),
-					$img = $image.find('img'),
-					x;
+			    // Loop through each .image container inside this section
+			    $section.find('.image').each(function () {
+			        var $imageContainer = $(this);
 
-				// Assign image.
-					$image.css('background-image', 'url(' + $img.attr('src') + ')');
+			        // Loop through each <img> inside this .image container
+			        $imageContainer.find('img').each(function () {
+			            var $img = $(this),
+			                position = $img.data('position');
 
-				// Set background position.
-					if (x = $img.data('position'))
-						$image.css('background-position', x);
+			            // Assign image as background to the container
+			            $imageContainer.css('background-image', 'url(' + $img.attr('src') + ')');
 
-				// Hide <img>.
-					$img.hide();
+			            // Set background position if defined
+			            if (position) {
+			                $imageContainer.css('background-position', position);
+			            }
 
+			            // Hide the original image
+			            $img.hide();
+			        });
+			    });
 			});
 
 	// Features.
