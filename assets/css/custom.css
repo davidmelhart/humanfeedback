@@ -29,6 +29,10 @@
 	margin: 0;
 }
 
+#header {
+	text-align: center;
+}
+
 #header a {
 	text-decoration: none;
 	border-bottom: none;
