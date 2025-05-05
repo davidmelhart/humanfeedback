@@ -212,7 +212,7 @@ button:after,
 .video-container video {
 	width: 100%;
 	max-width: 50em;
-	height: 30em;
+	height: auto;
 	margin: 0 auto 2em auto;
 	border-bottom: 2px solid #099CFF;
 	border-left: 2px solid #099CFF;
