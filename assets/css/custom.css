@@ -21,6 +21,19 @@
 	text-transform: lowercase;
 }
 
+#title.secondary {
+	padding: 5px 10px;
+	font-size: 1em;
+	border: 2px solid;
+	border-radius: 0.3em;
+	margin: 0;
+}
+
+#header a {
+	text-decoration: none;
+	border-bottom: none;
+}
+
 body {
 	background: #242424;	
 }
@@ -32,6 +45,15 @@ h1, h2, h3, h4, h5, h6, label, .button {
 	text-transform: uppercase;
 }
 
+h1.major:after{
+	background-image: linear-gradient(to right, #099CFF, #9AD7FF);
+	background-image: -moz-linear-gradient(to right, #099CFF, #9AD7FF);
+	background-image: -webkit-linear-gradient(to right, #099CFF, #9AD7FF);
+	background-image: -ms-linear-gradient(to right, #099CFF, #9AD7FF);
+	background-image: linear-gradient(to right, #099CFF, #9AD7FF);
+}
+
+
 .spotlights > section > .image:before {
 	background: #0069B6;
 }
@@ -40,13 +62,36 @@ h1, h2, h3, h4, h5, h6, label, .button {
 	background: #242424;
 }
 
-#sidebar nav a {
+#header > nav > ul > li a {
+	color: #ffffff;
+	opacity: 0.75;
+}
+
+#header > nav > ul > li a.current {
+	opacity: 1;
+	position: relative;
+}
+
+#header > nav > ul > li a.current:after {
+	content: '';
+	bottom: -5px;
+	left: 0;
+	position: absolute;
+	display: block !important;
+	height: 2px;
+	width: 100%;
+	background: #ffffff;
+}
+
+#sidebar nav a,
+#header > nav > ul > li a {
 	font-family: "DM Mono", monospace;
 	font-weight: 900;
 	font-style: normal;
 	font-size: 0.8em;
 }
 
+#header,
 #intro,
 #footer {
 	background-image: url(images/intro.svg), linear-gradient(52deg, #0069B6 3%, #3CC5FE 97%);
@@ -212,6 +257,15 @@ section#team {
 	text-transform: uppercase;
 }
 
+#author {
+	border-top: solid 1px rgba(255, 255, 255, 0.15);
+	padding: 1em 0;
+	margin: 2em 0;
+	text-align: right;
+	font-weight: bold;
+	font-style: italic;
+}
+
 @media screen and (max-width: 736px) {
 	#preview {
 		display: none;
@@ -241,6 +295,10 @@ section#team {
 	#title {
 		font-size: 20px;
     margin: 0 auto 0.5em auto;
+	}
+
+	#title.secondary {
+		margin: 1em auto;
 	}
 }
 
