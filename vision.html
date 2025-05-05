@@ -39,13 +39,18 @@
 						<div class="inner">
 							<h1 class="major">Humans: the Final AI Frontier</h1>
 							<p>We tend to think artificial intelligence (AI) performs better when tasked with clearly defined goals, such as recognizing an object, moving a robot to a particular location or writing code. Perhaps this is because we, as humans, find it hard to trust AI to do anything that is subjectively defined, such as recognizing our emotions, critiquing our artistic style, or expressing views about our living spaces. Or perhaps, current AI performs poorly in many of the things we ask it to do, because it essentially ignores us. If human-centered AI will ever exist, human feedback is the only way to get there: the final frontier for AI.</p>
+
 							<h2>Human Feedback is Hard</h2>
-							<p>From philosophical arguments about human values and norms, to the long-standing struggles of psychology to discover ways to measure human responses, one thing is certain: human responses are hard to get and even harder to get right! However there is growing scientific evidence from behavioral economics, neuroscience, data science and AI supporting that you can actually get very reliable responses from humans even if you ask them to express their stress or engagement levels when they watch a film, or their overall sentiment during a therapy session.</p>
+							<p>From philosophical arguments about human values and norms, to the long-standing struggles of psychology to discover ways to measure human responses, one thing is certain: human responses are hard to get and even harder to get right! However there is growing scientific evidence from behavioral economics, neuroscience, data science and AI supporting that you can actually get <a href="https://ieeexplore.ieee.org/abstract/document/8521685" target="_blank">very reliable</a><sup>1</sup> responses from humans even if you ask them to express their stress or engagement levels when they watch a film, or their overall sentiment during a therapy session.</p>
+
 							<h2>AI and Human Feedback</h2>
-							<p>Meanwhile the very best of AI models available today, such as large language models (LLMs), are not really aligned with us. Such models are far from reaching human-level performance across many tasks because, simply put, they largely rely on language and other static representations of our world such as text descriptions of images. They fail to understand our intentions, goals, emotions, artistic styles, and preferences; when they do, we are impressed! Even the most impressive multimodal models (e.g. GPT-4o) for instance cannot predict our emotional patterns when we watch a movie or play a video game. This happens primarily because video labels were never available to train these models. As a result current AI tools and methods are conditioned by the lack of reliable subjective labels of multimodal temporal signals.</p>
-							<p>While human feedback is critical for the development of human-centered AI it currently only exists in text and static forms such as tags and captions of images or language descriptions of more or less anything. The next generation of AI systems however will likely not rely on language and semantic descriptions as much but rather on multimodal signals [ref here LeCun]. This new generation of AI models will require temporal human labels over media content such as videos so that they perceive and act upon a world which is closer to ours. This push towards human-centered AI is in need of such labelled spatiotemporal data of subjective nature for training entirely new or fine-tuning existing media models.</p>
+							<p>Meanwhile the very best of AI models available today, such as large language models (LLMs), are not really aligned with us. Such models are far from reaching human-level performance across many tasks because, simply put, they largely rely on language and other <i>static</i> representations of our world such as text descriptions of images. They fail to understand our intentions, goals, emotions, artistic styles, and preferences; when they do, we are impressed! Even the most impressive multimodal models (e.g. GPT-4o) for instance cannot predict our emotional patterns when we watch a movie or <a href="https://arxiv.org/pdf/2502.04379" target="_blank">play a video game</a><sup>2</sup>. This happens primarily because video labels were never available to train these models. As a result current AI tools and methods are conditioned by the lack of reliable <i>subjective</i> labels of multimodal <i>temporal</i> signals.</p>
+
+							<p>While human feedback is critical for the development of human-centered AI it currently only exists in <i>text</i> and <i>static</i> forms such as tags and captions of images or language descriptions of more or less anything. The next generation of AI systems however will likely not rely on language and semantic descriptions as much but rather on <a href="https://arxiv.org/pdf/2404.08471" target="_blank"><i>multimodal</i> signals</a><sup>3</sup>. This new generation of AI models will require <i>temporal</i> human labels over media content such as videos so that they perceive and act upon a world which is closer to ours. This push towards human-centered AI is in need of such labelled spatiotemporal data of subjective nature for training entirely new or fine-tuning existing media models.</p>
+
 							<h2>HumanFeedback.ai</h2>
 							<p>To support the next generation of human-centered AI algorithms at HumanFeedback.ai we create the definitive platform for the subjective and temporal labeling of multimodal signals such as videos. We build tools that empower AI engineers by offering rapid and reliable large-scale human feedback for their models. Our patented technology builds on the methods that have recently been used to make unprecedented progress in AI (e.g., foundation models, reinforcement learning via human feedback) but it combines it with insights from affective computing, behavioral economics and the psychology of bounded rationality.</p>
+
 
 							<div class="video-container">
 								<video controls muted autoplay loop>
@@ -53,9 +58,19 @@
 								</video>
 							</div>
 
-							<p>At HumanFeedback.ai we believe that less (but more reliable) data is more. Using our tools you can reliably solicit human feedback rapidly and at a competitive cost in terms of human labor and time. Our tools enable you to recognize when human annotators are confused, tired, or overly ambiguous, how many annotators are sufficient for a task, which highlighted parts of video content require annotations, and which parts of your video are not worth annotating. With our platform you can rapidly detect unreliable annotators early (costing a few minutes of crowdsourcing), derive the ground truth of any subjective label and obtain reliable data with the least amount of annotations. You can then use the obtained data to build human-centered models on an end-to-end basis or fine tune existing foundation models.</p>
+							<p>At HumanFeedback.ai we believe that <i>less</i> (<i>but more reliable</i>) data is more. Using our tools you can reliably solicit human feedback rapidly and at a competitive cost in terms of human labor and time. Our tools enable you to recognize when human annotators are confused, tired, or overly ambiguous, how many annotators are sufficient for a task, which highlighted parts of video content require annotations, and which parts of your video are not worth annotating. With our platform you can rapidly detect unreliable annotators early (costing a few minutes of crowdsourcing), derive the ground truth of any subjective label and obtain reliable data with the least amount of annotations. You can then use the obtained data to build human-centered models on an end-to-end basis or fine tune existing foundation models.</p>
+
 							<p>Beyond the AI industry, any industrial or research sector that requires human data of subjective nature is a potential use case for our technology including but not limited to automotive industry, healthcare, manufacturing, construction architecture and engineering and videogames.</p>
+
+
+							<p><sup>1</sup>Yannakakis, G. N., Cowie, R., & Busso, C. (2018). The ordinal nature of emotions: An emerging approach. IEEE Transactions on Affective Computing, 12(1), 16-35. [Outstanding IEEE TAC Paper, Nominated Best of IEEE Paper]</p>
+
 							
+							<p><sup>2</sup>Melhart, D., Barthet, M., & Yannakakis, G. N. (2025). Can Large Language Models Capture Video Game Engagement?. arXiv preprint arXiv:2502.04379.</p>
+
+							
+							<p><sup>3</sup>Bardes, A., Garrido, Q., Ponce, J., Chen, X., Rabbat, M., LeCun, Y., ... & Ballas, N. (2024). Revisiting feature prediction for learning visual representations from video. arXiv preprint arXiv:2404.08471.</p>
+
 							<div id="author">
 								<img src="images/georgios.jpg" alt="" data-position="center center">	
 								<h3>Georgios N. Yannakakis<br>Founder, FIEEE Affective Computing</h3>
@@ -72,6 +87,7 @@
 							
 							<div class="split style1">
 								<p>We'd love to hear from you! Whether you have a question, feedback or need assistance, our team is here to help. Please reach out to us by email!</p>
+
 								<section>
 									<ul class="contact">
 										<li>
